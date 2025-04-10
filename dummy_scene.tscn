@@ -1,46 +1,67 @@
-[gd_scene load_steps=4 format=3 uid="uid://qxuouqiqy1tj"]
+[gd_scene load_steps=5 format=3 uid="uid://qxuouqiqy1tj"]
 
 [ext_resource type="PackedScene" uid="uid://l3wdjobaj4j1" path="res://mob.tscn" id="1_3rdu6"]
+[ext_resource type="Script" uid="uid://cu0g8jh5ulko" path="res://camera_2d.gd" id="1_dwpgv"]
 [ext_resource type="PackedScene" uid="uid://c7tehx08j8m8r" path="res://player.tscn" id="2_dwpgv"]
 [ext_resource type="PackedScene" uid="uid://cpj8x1ioxvmcg" path="res://platform.tscn" id="3_uw3sj"]
 
 [node name="dummy_scene" type="Node2D"]
 
-[node name="mob" parent="." instance=ExtResource("1_3rdu6")]
-position = Vector2(930, 58)
+[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("object_to_follow")]
+script = ExtResource("1_dwpgv")
+object_to_follow = NodePath("../player")
 
 [node name="player" parent="." instance=ExtResource("2_dwpgv")]
 position = Vector2(202, 19)
+gravity = 600
+jump_speed = 300
+speed = 200
 
-[node name="mob2" parent="." instance=ExtResource("1_3rdu6")]
-position = Vector2(633, 198)
+[node name="floor" type="Node" parent="."]
 
-[node name="platform" parent="." instance=ExtResource("3_uw3sj")]
-position = Vector2(454, 160)
+[node name="platform13" parent="floor" instance=ExtResource("3_uw3sj")]
+position = Vector2(367, -2894)
 
-[node name="platform2" parent="." instance=ExtResource("3_uw3sj")]
+[node name="platform12" parent="floor" instance=ExtResource("3_uw3sj")]
+position = Vector2(370, -1447)
+
+[node name="platform11" parent="floor" instance=ExtResource("3_uw3sj")]
+position = Vector2(286, -3482)
+
+[node name="platform" parent="floor" instance=ExtResource("3_uw3sj")]
+position = Vector2(88, -750)
+
+[node name="platform2" parent="floor" instance=ExtResource("3_uw3sj")]
 position = Vector2(460, 403)
 
-[node name="platform3" parent="." instance=ExtResource("3_uw3sj")]
+[node name="platform3" parent="floor" instance=ExtResource("3_uw3sj")]
 position = Vector2(197, 222)
 
-[node name="platform4" parent="." instance=ExtResource("3_uw3sj")]
+[node name="platform4" parent="floor" instance=ExtResource("3_uw3sj")]
 position = Vector2(618, 314)
 
-[node name="platform5" parent="." instance=ExtResource("3_uw3sj")]
+[node name="platform5" parent="floor" instance=ExtResource("3_uw3sj")]
 position = Vector2(306, 305)
 
-[node name="platform6" parent="." instance=ExtResource("3_uw3sj")]
+[node name="platform6" parent="floor" instance=ExtResource("3_uw3sj")]
 position = Vector2(792, 216)
 
-[node name="platform7" parent="." instance=ExtResource("3_uw3sj")]
+[node name="platform7" parent="floor" instance=ExtResource("3_uw3sj")]
 position = Vector2(1056, 287)
 
-[node name="platform8" parent="." instance=ExtResource("3_uw3sj")]
+[node name="platform8" parent="floor" instance=ExtResource("3_uw3sj")]
 position = Vector2(83, 357)
 
-[node name="platform9" parent="." instance=ExtResource("3_uw3sj")]
+[node name="platform9" parent="floor" instance=ExtResource("3_uw3sj")]
 position = Vector2(637, 100)
 
-[node name="platform10" parent="." instance=ExtResource("3_uw3sj")]
+[node name="platform10" parent="floor" instance=ExtResource("3_uw3sj")]
 position = Vector2(924, 407)
+
+[node name="mobs" type="Node" parent="."]
+
+[node name="mob" parent="mobs" instance=ExtResource("1_3rdu6")]
+position = Vector2(930, 58)
+
+[node name="mob2" parent="mobs" instance=ExtResource("1_3rdu6")]
+position = Vector2(633, 198)
