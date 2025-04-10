@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://l3wdjobaj4j1"]
+
+[ext_resource type="Texture2D" uid="uid://dtf5je7mek3l2" path="res://assets/mob.png" id="1_dy6sc"]
+[ext_resource type="Script" uid="uid://cqj1yaercjfb6" path="res://mob.gd" id="1_nokgg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nokgg"]
+size = Vector2(64, 64)
+
+[node name="mob" type="CharacterBody2D"]
+script = ExtResource("1_nokgg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_dy6sc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_nokgg")
