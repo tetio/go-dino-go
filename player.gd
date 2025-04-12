@@ -1,11 +1,16 @@
 class_name Player
 extends CharacterBody2D
 
-@export var gravity = 100
-@export var jump_speed = 100
-@export var speed = 100
+const MAX_JUMPS = 2
+
+
+@export var gravity = 10000
+@export var jump_speed = 200
+@export var speed = 200
 
 @onready var sprite : Sprite2D = $Sprite2D
+
+var jump_stage = false
 
 func _physics_process(delta: float) -> void:
 	
@@ -19,8 +24,12 @@ func _physics_process(delta: float) -> void:
 	 
 	if not is_on_floor():
 		velocity.y += gravity * delta
+	elif jump_stage:
+		jump_stage = false
 	
-	if Input.is_action_just_pressed("jump"):
-		velocity.y -= jump_speed
+	if not jump_stage && Input.is_action_just_pressed("jump"): # 
+		if not is_on_floor():
+			jump_stage = true
+		velocity.y = -jump_speed	
 	
 	move_and_slide()

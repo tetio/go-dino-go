@@ -15,7 +15,6 @@ object_to_follow = NodePath("../player")
 position = Vector2(202, 19)
 gravity = 600
 jump_speed = 300
-speed = 200
 
 [node name="floor" type="Node" parent="."]
 
@@ -36,6 +35,10 @@ position = Vector2(460, 403)
 
 [node name="platform3" parent="floor" instance=ExtResource("3_uw3sj")]
 position = Vector2(197, 222)
+
+[node name="platform3" parent="floor/platform3" instance=ExtResource("3_uw3sj")]
+position = Vector2(-172, 294)
+scale = Vector2(71.36, 1)
 
 [node name="platform4" parent="floor" instance=ExtResource("3_uw3sj")]
 position = Vector2(618, 314)
