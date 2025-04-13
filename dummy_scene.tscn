@@ -22,23 +22,70 @@ jump_speed = 300
 position = Vector2(367, -2894)
 
 [node name="platform12" parent="floor" instance=ExtResource("3_uw3sj")]
-position = Vector2(370, -1447)
+position = Vector2(906, -240)
 
 [node name="platform11" parent="floor" instance=ExtResource("3_uw3sj")]
 position = Vector2(286, -3482)
 
 [node name="platform" parent="floor" instance=ExtResource("3_uw3sj")]
-position = Vector2(88, -750)
+position = Vector2(324, -230)
+
+[node name="platform" parent="floor/platform" instance=ExtResource("3_uw3sj")]
+position = Vector2(87, 303)
 
 [node name="platform2" parent="floor" instance=ExtResource("3_uw3sj")]
 position = Vector2(460, 403)
 
+[node name="platform2" parent="floor/platform2" instance=ExtResource("3_uw3sj")]
+position = Vector2(-671, 197)
+
+[node name="platform2" parent="floor/platform2/platform2" instance=ExtResource("3_uw3sj")]
+position = Vector2(124, 0)
+
+[node name="platform3" parent="floor/platform2/platform2" instance=ExtResource("3_uw3sj")]
+position = Vector2(241, 1)
+
+[node name="platform2" parent="floor/platform2/platform2/platform3" instance=ExtResource("3_uw3sj")]
+position = Vector2(124, 0)
+
+[node name="platform4" parent="floor/platform2/platform2" instance=ExtResource("3_uw3sj")]
+position = Vector2(492, 2)
+
+[node name="platform2" parent="floor/platform2/platform2/platform4" instance=ExtResource("3_uw3sj")]
+position = Vector2(124, 0)
+
+[node name="platform3" parent="floor/platform2/platform2/platform4" instance=ExtResource("3_uw3sj")]
+position = Vector2(241, 1)
+
+[node name="platform2" parent="floor/platform2/platform2/platform4/platform3" instance=ExtResource("3_uw3sj")]
+position = Vector2(124, 0)
+
+[node name="platform5" parent="floor/platform2/platform2" instance=ExtResource("3_uw3sj")]
+position = Vector2(978, 4)
+
+[node name="platform2" parent="floor/platform2/platform2/platform5" instance=ExtResource("3_uw3sj")]
+position = Vector2(124, 0)
+
+[node name="platform3" parent="floor/platform2/platform2/platform5" instance=ExtResource("3_uw3sj")]
+position = Vector2(241, 1)
+
+[node name="platform2" parent="floor/platform2/platform2/platform5/platform3" instance=ExtResource("3_uw3sj")]
+position = Vector2(124, 0)
+
+[node name="platform4" parent="floor/platform2/platform2/platform5" instance=ExtResource("3_uw3sj")]
+position = Vector2(492, 2)
+
+[node name="platform2" parent="floor/platform2/platform2/platform5/platform4" instance=ExtResource("3_uw3sj")]
+position = Vector2(124, 0)
+
+[node name="platform3" parent="floor/platform2/platform2/platform5/platform4" instance=ExtResource("3_uw3sj")]
+position = Vector2(241, 1)
+
+[node name="platform2" parent="floor/platform2/platform2/platform5/platform4/platform3" instance=ExtResource("3_uw3sj")]
+position = Vector2(124, 0)
+
 [node name="platform3" parent="floor" instance=ExtResource("3_uw3sj")]
 position = Vector2(197, 222)
-
-[node name="platform3" parent="floor/platform3" instance=ExtResource("3_uw3sj")]
-position = Vector2(-172, 294)
-scale = Vector2(71.36, 1)
 
 [node name="platform4" parent="floor" instance=ExtResource("3_uw3sj")]
 position = Vector2(618, 314)
@@ -56,7 +103,7 @@ position = Vector2(1056, 287)
 position = Vector2(83, 357)
 
 [node name="platform9" parent="floor" instance=ExtResource("3_uw3sj")]
-position = Vector2(637, 100)
+position = Vector2(614, -90)
 
 [node name="platform10" parent="floor" instance=ExtResource("3_uw3sj")]
 position = Vector2(924, 407)
