@@ -16,7 +16,37 @@ position = Vector2(202, 19)
 gravity = 600
 jump_speed = 300
 
+[node name="platform3" parent="." instance=ExtResource("3_uw3sj")]
+position = Vector2(515, 520)
+
 [node name="floor" type="Node" parent="."]
+
+[node name="platform29" parent="floor" instance=ExtResource("3_uw3sj")]
+position = Vector2(874, 520)
+
+[node name="platform26" parent="floor" instance=ExtResource("3_uw3sj")]
+position = Vector2(752, 520)
+
+[node name="platform27" parent="floor" instance=ExtResource("3_uw3sj")]
+position = Vector2(1001, 520)
+
+[node name="platform28" parent="floor" instance=ExtResource("3_uw3sj")]
+position = Vector2(1252, 520)
+
+[node name="platform25" parent="floor" instance=ExtResource("3_uw3sj")]
+position = Vector2(1125, 520)
+
+[node name="platform22" parent="floor" instance=ExtResource("3_uw3sj")]
+position = Vector2(1376, 520)
+
+[node name="platform23" parent="floor" instance=ExtResource("3_uw3sj")]
+position = Vector2(1493, 520)
+
+[node name="platform18" parent="floor" instance=ExtResource("3_uw3sj")]
+position = Vector2(1617, 520)
+
+[node name="platform14" parent="floor" instance=ExtResource("3_uw3sj")]
+position = Vector2(-218, 520)
 
 [node name="platform13" parent="floor" instance=ExtResource("3_uw3sj")]
 position = Vector2(367, -2894)
@@ -30,59 +60,8 @@ position = Vector2(286, -3482)
 [node name="platform" parent="floor" instance=ExtResource("3_uw3sj")]
 position = Vector2(324, -230)
 
-[node name="platform" parent="floor/platform" instance=ExtResource("3_uw3sj")]
-position = Vector2(87, 303)
-
 [node name="platform2" parent="floor" instance=ExtResource("3_uw3sj")]
 position = Vector2(460, 403)
-
-[node name="platform2" parent="floor/platform2" instance=ExtResource("3_uw3sj")]
-position = Vector2(-671, 197)
-
-[node name="platform2" parent="floor/platform2/platform2" instance=ExtResource("3_uw3sj")]
-position = Vector2(124, 0)
-
-[node name="platform3" parent="floor/platform2/platform2" instance=ExtResource("3_uw3sj")]
-position = Vector2(241, 1)
-
-[node name="platform2" parent="floor/platform2/platform2/platform3" instance=ExtResource("3_uw3sj")]
-position = Vector2(124, 0)
-
-[node name="platform4" parent="floor/platform2/platform2" instance=ExtResource("3_uw3sj")]
-position = Vector2(492, 2)
-
-[node name="platform2" parent="floor/platform2/platform2/platform4" instance=ExtResource("3_uw3sj")]
-position = Vector2(124, 0)
-
-[node name="platform3" parent="floor/platform2/platform2/platform4" instance=ExtResource("3_uw3sj")]
-position = Vector2(241, 1)
-
-[node name="platform2" parent="floor/platform2/platform2/platform4/platform3" instance=ExtResource("3_uw3sj")]
-position = Vector2(124, 0)
-
-[node name="platform5" parent="floor/platform2/platform2" instance=ExtResource("3_uw3sj")]
-position = Vector2(978, 4)
-
-[node name="platform2" parent="floor/platform2/platform2/platform5" instance=ExtResource("3_uw3sj")]
-position = Vector2(124, 0)
-
-[node name="platform3" parent="floor/platform2/platform2/platform5" instance=ExtResource("3_uw3sj")]
-position = Vector2(241, 1)
-
-[node name="platform2" parent="floor/platform2/platform2/platform5/platform3" instance=ExtResource("3_uw3sj")]
-position = Vector2(124, 0)
-
-[node name="platform4" parent="floor/platform2/platform2/platform5" instance=ExtResource("3_uw3sj")]
-position = Vector2(492, 2)
-
-[node name="platform2" parent="floor/platform2/platform2/platform5/platform4" instance=ExtResource("3_uw3sj")]
-position = Vector2(124, 0)
-
-[node name="platform3" parent="floor/platform2/platform2/platform5/platform4" instance=ExtResource("3_uw3sj")]
-position = Vector2(241, 1)
-
-[node name="platform2" parent="floor/platform2/platform2/platform5/platform4/platform3" instance=ExtResource("3_uw3sj")]
-position = Vector2(124, 0)
 
 [node name="platform3" parent="floor" instance=ExtResource("3_uw3sj")]
 position = Vector2(197, 222)
@@ -107,6 +86,27 @@ position = Vector2(614, -90)
 
 [node name="platform10" parent="floor" instance=ExtResource("3_uw3sj")]
 position = Vector2(924, 407)
+
+[node name="platform15" parent="floor" instance=ExtResource("3_uw3sj")]
+position = Vector2(-94, 520)
+
+[node name="platform16" parent="floor" instance=ExtResource("3_uw3sj")]
+position = Vector2(411, 73)
+
+[node name="platform17" parent="floor" instance=ExtResource("3_uw3sj")]
+position = Vector2(639, 520)
+
+[node name="platform19" parent="floor" instance=ExtResource("3_uw3sj")]
+position = Vector2(147, 520)
+
+[node name="platform20" parent="floor" instance=ExtResource("3_uw3sj")]
+position = Vector2(398, 520)
+
+[node name="platform21" parent="floor" instance=ExtResource("3_uw3sj")]
+position = Vector2(23, 520)
+
+[node name="platform24" parent="floor" instance=ExtResource("3_uw3sj")]
+position = Vector2(274, 520)
 
 [node name="mobs" type="Node" parent="."]
 
